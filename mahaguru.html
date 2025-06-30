@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> <!-- Sets character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures mobile responsiveness -->
+  <title>Sports - Mahaguru Institute of Technology</title> <!-- Page title in browser tab -->
+
+  <!-- CSS styles start -->
+  <style>
+    /* Global body styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5; /* Light background */
+    }
+
+    /* Top bar above header */
+    .top-bar {
+      background-color: #ffffff;  
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* Main header section with logo and nav */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Subtle shadow */
+    }
+
+    /* Logo styling */
+    header img {
+      height: 30px;
+    }/* Navigation links */
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #1348b4;
+      font-weight: bold;
+    }
+
+    /* Hero/banner section */
+     .hero {
+      background: url('mahaguru_campus.jpg.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    /* Dark overlay for text visibility */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    }
+
+    /* Main title in hero section */
+    .hero h1 {
+      position: relative; /* Keeps text above overlay */
+      font-size: 36px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    /* Subheading in hero */
+    .hero p {
+      position: relative;
+      font-size: 18px;
+      z-index: 1;
+    }
+
+    /* Cards container */
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    /* Individual card box */
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 220px;
+      text-align: center;
+      transition: transform 0.2s; /* Smooth hover effect */
+    }
+
+    /* Hover effect for cards */
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Title in cards */
+    .card h3 {
+      color: #134fae;
+      margin-bottom: 10px;
+    }
+
+    /* Footer section */
+    .footer {
+      background-color: #ffffff;
+      color: rgb(0, 61, 141);
+      text-align: center;
+      padding: -10;
+    }
+    .image-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #1e0303;
+  background-image: url('mahaguru_campus.jpg.jpg');
+  padding:  0;
+}
+
+.marquee-track {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
+.marquee-track img {
+  height: 100px;
+  margin: 0;
+  vertical-align: middle;
+  border-radius: 0px;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Top bar with contact info -->
+  <div class="top-bar">
+    College Code: VPE | +91 479 2331696 | Sports Department
+  </div>
+
+  <!-- Header with logo and nav -->
+  <header>
+  <div style="display: flex; align-items: center;">
+    <img src="download.jpeg" alt="Mahaguru Logo">
+
+    <h1 style="margin-left: 15px; font-size: 20px; color: #871d02;">MAHAGURU INSTITUTE OF TECHNOLOGY<br>DEPARTMENT OF PHYSICAL EDUCATION<br>
+    </h1>
+  </div>
+  
+  <nav>
+    <a href="mahaguru.html">Home</a>
+    <a href="event.html">Events</a>
+    <a href="team.html">Teams</a>
+    <a href="contact.html">Contact</a>
+    <a href="Mahagururesult.html">Results</a>
+    <a href="location.html">location</a>
+    <a href="course.html">Admission</a>
+  </nav>
+</header>
+
+  <!-- Hero section with background image -->
+  <div class="hero">
+    <div>
+      <h1>Mahaguru Institute of Technology</h1> <!-- Hero title -->
+      <p>Empowering Students Through Sports</p> <!-- Hero subtitle -->
+    </div>
+  </div>
+  <img src="mahaguru_campus.jpg.jpg" alt="mahaguru campus"
+         style="width: 250px; height: 140px; object-fit: cover; border-radius: 8px; margin-top: 15px;">
+
+  <!-- Card layout section for services/info -->
+  <section class="cards">
+    <div class="card">
+      <h3>Admissions</h3>
+      <p>Apply now for Sports Quota Admissions 2025–26.</p>
+      <a href="course.html" target="_blank">Click Here</a>
+    </div>
+    <div class="card">
+      <h3>Events</h3>
+      <p>Inter-college tournaments, workshops and meets.</p>
+      <a href="event.html" target="_blank">Click Here</a>
+    </div>
+    <div class="card">
+      <h3>Placements</h3>
+      <p>Sports achievements add value to your resume.</p>
+    </div>
+    <div class="card">
+      <h3>Library</h3>
+      <p>Find books on fitness, sports science, and nutrition.</p>
+    </div>
+    <div class="card">
+      <h3>Results</h3>
+      <p>Track your team’s victories and achievements here.</p>
+      <a href="Mahagururesult.html" target="_blank">Click Here</a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy;<strong> 2025 Mahaguru Institute of Technology | Department of Physical Education</strong>
+    <!-- Image Queue Carousel -->
+<div class="image-marquee">
+  <div class="marquee-track">
+    <img src="kabaddi.jpg" alt="Event 1" />
+    <img src="IMG.jpg" alt="Event 2" />
+    <img src="cricket.jpg" alt="Event 3" />
+    <img src="img4.jpg" alt="Event 4" />
+    <img src="img1.jpg" alt="Event 1" />
+    <img src="img2.jpg" alt="Event 2" />
+    <img src="img3.jpg" alt="Event 3" />
+    <img src="img4.jpg" alt="Event 4" />
+    <img src="img1.jpg" alt="Event 1" />
+    <img src="img2.jpg" alt="Event 2" />
+    <img src="img3.jpg" alt="Event 3" />
+    <img src="img4.jpg" alt="Event 4" />
+    <img src="img1.jpg" alt="Event 1" />
+    <img src="img2.jpg" alt="Event 2" />
+    <img src="img3.jpg" alt="Event 3" />
+    <img src="img4.jpg" alt="Event 4" />
+    <!-- Add more images -->
+  </div>
+</div>
+
+  </div>
+
+</body>
+</html>

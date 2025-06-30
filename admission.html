@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Form - Mahaguru Institute of Technology</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #003c8f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Admission Form - Mahaguru Institute of Technology</h2>
+
+    <!-- Use a service like Formspree for email handling -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="hidden" name="_next" value="access.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <label for="name">Full Name:</label>
+      <input type="text" name="Full Name" required>
+
+      <label for="address">Address:</label>
+      <textarea name="Address" rows="3" required></textarea>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="Phone" pattern="[0-9]{10}" required>
+
+      <label for="district">District:</label>
+<select id="district" name="district" required>
+  <option value="">-- Select District --</option>
+  <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+  <option value="Kollam">Kollam</option>
+  <option value="Pathanamthitta">Pathanamthitta</option>
+  <option value="Alappuzha">Alappuzha</option>
+  <option value="Kottayam">Kottayam</option>
+  <option value="Idukki">Idukki</option>
+  <option value="Ernakulam">Ernakulam</option>
+  <option value="Thrissur">Thrissur</option>
+  <option value="Palakkad">Palakkad</option>
+  <option value="Malappuram">Malappuram</option>
+  <option value="Kozhikode">Kozhikode</option>
+  <option value="Wayanad">Wayanad</option>
+  <option value="Kannur">Kannur</option>
+  <option value="Kasaragod">Kasaragod</option>
+  <option value="Other">Other</option>
+</select>
+
+
+      <label for="state">State (Optional):</label>
+<select id="state" name="state">
+  <option value="">-- Select State --</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Andhra Pradesh">Andhra Pradesh</option>
+  <option value="Other">Other</option>
+</select>
+
+<label for="nationality">Nationality (Optional):</label>
+<select id="nationality" name="nationality">
+  <option value="">-- Select Nationality --</option>
+  <option value="Indian">Indian</option>
+  <option value="Nepali">Nepali</option>
+  <option value="Sri Lankan">Sri Lankan</option>
+  <option value="Other">Other</option>
+</select>
+
+<label for="mother-tongue">Mother Tongue (Optional):</label>
+<select id="mother-tongue" name="mother-tongue">
+  <option value="">-- Select Language --</option>
+  <option value="Malayalam">Malayalam</option>
+  <option value="Tamil">Tamil</option>
+  <option value="Hindi">Hindi</option>
+  <option value="English">English</option>
+  <option value="Other">Other</option>
+</select>
+
+      <label for="course">Choose Course:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option value="B.Tech Computer Science">B.Tech Computer Science</option>
+        <option value="B.Tech Mechanical Engineering">B.Tech Mechanical Engineering</option>
+        <option value="B.Tech Civil Engineering">B.Tech Civil Engineering</option>
+        <option value="B.Tech Electronics & Communication">B.Tech Electronics & Communication</option>
+        <option value="B.Tech Electrical Engineering">B.Tech Electrical Engineering</option>
+      </select>
+
+      <label for="sslc">SSLC Mark (%):</label>
+      <input type="number" name="SSLC Mark" required>
+
+      <label for="plustwo">Plus Two Total Marks (Out of 1200):</label>
+      <input type="number" name="Plus Two Total Marks" required>
+
+      <label for="pcm-average">Average Mark in Physics, Chemistry, Maths:</label>
+      <input type="number" name="PCM Average" step="0.01" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
